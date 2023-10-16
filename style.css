@@ -1,0 +1,230 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: #8CC461;
+
+}
+.container{
+height: 100vh;
+}
+.top-score-box{
+    width:60%;
+    margin:40px auto 0;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    color: white;
+    font-family: 'Roboto' ;
+    
+}
+.score-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:50%
+    
+}
+.cs,.ys{
+    text-align: center;
+    font-size: 56px;
+    font-family: 'Roboto' ;
+}
+.computer-score ,.your-score{
+    
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 17px;
+    
+}
+.computer-score h6,.your-score h6{
+    text-align: center;
+    color:  #656565;
+    font-family: 'Roboto' ;
+}
+
+
+
+.game{
+    height:70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+.info{
+    width: 700px;
+   min-height: 7vh;
+   font-size: 1.2rem;
+   margin: 1rem 0 0 0;
+   display: flex;
+   justify-content: space-around;
+}
+.option{
+
+    /* max-width: 100%; */
+    width: 700px;
+    min-height: 50vh;
+display: grid;
+place-content: center;
+position: relative;
+/* padding-top: ; */
+}
+.con{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding:18px;
+    cursor: pointer;
+}
+.rock{
+    background: #0074B6;
+    left: 8rem;
+    /* top: 1%; */
+}
+.scissor{
+    background: #BD00FF;
+    right: 8rem;
+    /* top:1%; */
+}
+.paper{
+    background: #FFA943;
+    left: 18rem;
+    top: 55%;
+
+}
+.item{
+    background-color: white;
+    height: 100%;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+.user,.comp{
+    opacity:0;
+    color: white;
+}
+.rules-div{
+   /* min-width: 100%; */
+    /* display: flex;
+    justify-content: flex-end; */
+    padding: 0 2rem 1rem 0;
+    /* position: relative; */
+    margin-top: 450px;
+    margin-left: 1100px;
+    position: absolute;
+
+
+}
+.rules-span h3{
+    padding: 15px;
+}
+.rules-span{
+    display: none;
+    background-color: #004429;
+    position: absolute;
+    right: 40px;
+    height: 20rem;
+    border: 4px solid white;
+    border-radius: 5px;
+    width: 15rem;
+    padding: 10px;
+    color: white;
+    font-family: 'Roboto' ;
+    bottom: 2vh;
+    font-size: 13px;
+
+}
+.rules-span ul{
+    list-style: none;
+}
+
+.rules-span li::before{
+    content: "■   ";
+    color: yellow;
+    
+}
+.rules-btn{
+    border:2px solid white;
+    background: transparent;
+    color: white;
+    width: 70px;
+    height: 25px;
+    border-radius: 3px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.cancel-btn{
+    /* display: block; */
+    background: red;
+    border-radius: 50%;
+    color: white;
+    font-size: 26px;
+    width: 30px;
+    position: absolute;
+    right:0.01vh;
+    bottom: 48vh;
+    z-index: 1;
+}
+.fade-out{
+    opacity:0;
+    pointer-events: none;
+    
+}
+
+
+.highlight{
+    left: 6rem;
+    top:1%
+}
+
+.computer{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding:18px;
+    cursor: pointer;
+    display: none;
+
+}
+.right{
+    left:28rem;
+    top:3%;
+}
+.win-display{
+    bottom: 170px;
+    left:580px;
+    position: absolute;
+    height: 20vh;
+    display: none;
+
+}
+.win,h3{
+    color: white;
+}
+h3{
+    font-size: 16px;
+    text-align: center;
+}
+.play{
+    background: white;
+    color: black;
+    border-radius: 3px;
+    width: 120px;
+    height: 30px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
